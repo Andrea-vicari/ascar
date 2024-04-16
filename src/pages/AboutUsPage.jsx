@@ -1,6 +1,6 @@
 import React from 'react'
 import Features from '../Components/Features';
-import Prices from '../Components/Prices';
+import Team from '../Components/Team';
 function AboutUsPage() {
   return (
     <>
@@ -10,7 +10,7 @@ function AboutUsPage() {
       </div>
     </div>
     <Features />
-    <Prices />
+    <Team />
     </>
   )
 }

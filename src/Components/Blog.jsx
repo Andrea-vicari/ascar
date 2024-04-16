@@ -1,5 +1,5 @@
 import React from 'react'
-import newsList from '../assets/works/portfolio.json';
+import newsList from '../assets/news/news.json';
 import { useSelector} from 'react-redux'
 
 
@@ -41,7 +41,7 @@ function Blog() {
         <p className="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
 
-                    <div className="row mb-2">
+                    <div className="row pb-5">
                     {newsList.map((e)=>{
                     return(
                         <div className="col-md-6" key={e.title}>
@@ -57,12 +57,12 @@ function Blog() {
                                 </a>
                                 </div>
                                 <div className="col-auto d-none d-lg-block">
-                                <img src={e.thumbImage} className='bd-placeholder-img' style={{width:200,height:100}}/>
+                                <img src={e.thumbImage} className='bd-placeholder-img' style={{width:250,height:250}}/>
                                 </div>
                             </div>
                         </div>
                     )})}
-                    <button className='btn btn-sm btn-danger'>SUCA</button>
+
                     </div>
 
     </div>

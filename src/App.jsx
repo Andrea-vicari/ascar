@@ -9,6 +9,8 @@ import AboutUsPage from './pages/AboutUsPage';
 import ServicePage from './pages/Servicepage';
 import ContactPage from './pages/ContactPage';
 import BlogPage from './pages/BlogPage';
+import PrivacyPage from './pages/PrivacyPage';
+import FaqPage from './pages/FaqPage';
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
             <Route path="/services" element={<ServicePage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/blogpage" element={<BlogPage />} />
+            <Route path="/faqpage" element={<FaqPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
         </Routes>
         </ScrollToTop>
       <Footer />

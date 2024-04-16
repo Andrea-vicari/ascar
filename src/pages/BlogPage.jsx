@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import { useSelector} from 'react-redux'
-import pic from '../assets/images/profile-pic.jpg'
+import newsList from '../../src/assets/news/news.json';
 
 function BlogPage() {
 
@@ -13,6 +13,23 @@ function BlogPage() {
 	themeType == "ligth" ? textType = "" : textType = "text-bg-dark"
 	themeType == "ligth" ? textColor = "" : textColor = "text-body-secondary"
 
+	// Declare a fixed length excerpt
+	var fixedLengthExcerpt;
+	// Function shorter() to short down a long description and generate an excerpt
+	// the length can be set by editing "arrayPh.length = x"
+	const shorter = (phrase) =>{
+	let arrayPh = phrase.split(' ');
+	arrayPh.length = 12;
+	fixedLengthExcerpt = arrayPh.join(' ');
+	return fixedLengthExcerpt
+	}
+
+	// Run shorter() and add an excerpt to each object of local newsList json
+	for(let i=0;i<newsList.length;i++){
+		shorter(newsList[i].description)
+		newsList[i].fixedLengthExcerpt = fixedLengthExcerpt
+	}
+
 	return (
 	<>
     <div className='container-fluid pt-5 mt-5 bg-network'>
@@ -22,12 +39,12 @@ function BlogPage() {
     </div>
 	<div className={"container-fluid"+ " " + bgType + " " + textType}>
 
-		<div className="container border border-1">
+		<div className="container">
 
-		<div className="row g-5 mt-1">
-			<div className="col-md-5 col-lg-4 order-md-last border border-2">
+		<div className="row g-5">
+			<div className="col-md-5 col-lg-4 order-md-last">
 			{/* Here Sidebar */}
-			<div className="position-sticky" style={{marginTop:10}}>
+			<div className="position-sticky" style={{marginTop:48}}>
 				<div className="p-4 mb-3 bg-body-tertiary rounded">
 				<h4 className="fst-italic">About</h4>
 				<p className="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
@@ -94,31 +111,27 @@ function BlogPage() {
 				</div>
 			</div>
 			</div>
-			<div className="col-md-7 col-lg-8 border border-2">
+			<div className="col-md-7 col-lg-8">
+			{newsList.map((e)=>{
+                    return(
+						<div className="col-md-12 pt-5" key={e.title}>
+						<div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+							<div className="col p-4 d-flex flex-column position-static">
+							<strong className="d-inline-block mb-2 text-primary-emphasis">{e.category}</strong>
+							<h3 className="mb-0">{e.title}</h3>
 
-				<div className={"col-md-12 mb-3"+ " " + bgType + " " + textType}>
-					<div className="h-100 p-5 border rounded-3">
-					<h2>Add borders</h2>
-					<p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-					<button className="btn btn-outline-secondary" type="button">Example button</button>
+							<p className="card-text mb-auto">{e.fixedLengthExcerpt}</p>
+							<a href="#" className="icon-link gap-1 icon-link-hover stretched-link">
+								Continue reading
+								<i className='fa fa-arrow-right'></i>
+							</a>
+							</div>
+							<div className="col-auto d-none d-lg-block">
+							<img src={e.thumbImage} className='bd-placeholder-img' style={{width:250,height:250}}/>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div className="col-md-12 mb-3">
-					<div className="h-100 p-5 border rounded-3">
-					<h2>Add borders</h2>
-					<p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-					<button className="btn btn-outline-secondary" type="button">Example button</button>
-					</div>
-				</div>
-				<div className="col-md-12 mb-3">
-					<div className="h-100 p-5 bg-body-tertiary border rounded-3">
-					<h2>Add borders</h2>
-					<p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-					<button className="btn btn-outline-secondary" type="button">Example button</button>
-					</div>
-				</div>
-
-
+			)})}
 
 			</div>
 		</div>

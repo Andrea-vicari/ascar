@@ -14,9 +14,10 @@ import '../src/Components/styles/footer-style.css'
 import '../src/Components/styles/services-style.css'
 import '../src/Components/styles/cta-style.css'
 import '../src/Components/styles/features-style.css'
-//import '../src/Components/styles/blog-style.css'
+import '../src/Components/styles/team-style.css'
 import '../src/Components/styles/banner-intro-style.css'
 import '../src/Components/styles/divider-style.css'
+import '../src/Components/styles/faq-style.css'
 
 // Main CSS Sass
 import './sass/index.scss';

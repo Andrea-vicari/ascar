@@ -26,11 +26,10 @@ function Footer() {
             </Link>
 
           <ul className="nav col-md-4 justify-content-end">
-            <li className="nav-item"><a href="#" className="nav-link px-2 text-white">Home</a></li>
-            <li className="nav-item"><a href="#" className="nav-link px-2 text-white">Features</a></li>
-            <li className="nav-item"><a href="#" className="nav-link px-2 text-white">Pricing</a></li>
-            <li className="nav-item"><a href="#" className="nav-link px-2 text-white">FAQs</a></li>
-            <li className="nav-item"><a href="#" className="nav-link px-2 text-white">About</a></li>
+            <li className="nav-item"><Link to="/" className="nav-link px-2 text-white">Home</Link></li>
+            <li className="nav-item"><Link to="/aboutus" className="nav-link px-2 text-white">About</Link></li>
+            <li className="nav-item"><Link to="/faqpage" className="nav-link px-2 text-white">FAQs</Link></li>
+            <li className="nav-item"><Link to="/privacy" className="nav-link px-2 text-white">Privacy</Link></li>
           </ul>
           <button id="myBtn" onClick={topFunction} className='btn btn-sm btn-outline-secondary'>
             <i className='fa fa-arrow-up'></i>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Services from '../Components/Services';
-import Portfolio from '../Components/Portfolio';
+import CalltoActionSmall from '../Components/CallToActionSmall';
+import Prices from '../Components/Prices';
 
 function ServicePage() {
   return (
@@ -11,7 +12,8 @@ function ServicePage() {
       </div>
     </div>
     <Services />
-    <Portfolio />
+    <CalltoActionSmall />
+    <Prices />
     </>
   )
 }
