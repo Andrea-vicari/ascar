@@ -1,7 +1,7 @@
 
 import Slider from '../Components/Slider';
 import CalltoActionSmall from '../Components/CallToActionSmall';
-import Portfolio from '../Components/Portfolio';
+import PortfolioModal from '../Components/PortfolioModal';
 import CallToAction from '../Components/CallToAction';
 import Blog from '../Components/Blog';
 import Services from '../Components/Services';
@@ -17,7 +17,7 @@ function HomepageOne() {
     <Features/>
     <CallToAction />
     <Services />
-    <Portfolio />
+    <PortfolioModal />
     <CalltoActionSmall />
     <Blog />
 

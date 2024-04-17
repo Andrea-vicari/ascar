@@ -2,9 +2,10 @@ import React from 'react';
 import { useState } from 'react';
 import { useSelector} from 'react-redux'
 import portfolio from '../assets/works/portfolio.json';
+import { Link } from 'react-router-dom';
 
 
-function Portfolio() {
+function PortfolioLink() {
     // Dark light logics
     const themeType = useSelector((state) => state.counter.value)
     let bgType, textType;
@@ -108,26 +109,10 @@ function Portfolio() {
 
     }
 
-    // useState Hook to check what id from modals
-    const [isCLicked, setID] = useState([]);
-
-
-    // Function to show the modal
-    const openModal = (whatClicked)=>{
-        setID(whatClicked);
-       document.getElementById(whatClicked).classList.add('d-block');
-      }
-    // Function to hide the modal
-      const closeModal = (whatClicked)=>{
-        setID(whatClicked);
-        document.getElementById(whatClicked).classList.remove('d-block');
-      }
-
-
     return (
     <>
     <section id="portfolio" className={"pb-5 " + bgType + " " + textType}>
-    <h1 className="section-title pt-5">Portfolio</h1>
+    <h1 className="section-title pt-5">PortfolioLink</h1>
         <p className='mb-3 text-center'>Really are proud of what i do. This is just an example of my latest projects.</p>
 
         <div>
@@ -154,41 +139,15 @@ function Portfolio() {
                                 <p className="card-text">{e.fixedLengthExcerpt}</p>
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div className="btn-group">
-                                        <button className="btn btn-outline-primary p-1" onClick={()=>openModal(i)}>
+                                        <Link className="btn btn-outline-primary p-1">
                                             <i className="fs-6 bi bi-search"></i> See Project
-                                        </button>
+                                        </Link>
                                     </div>
                                     <small className="text-primary fs-6">{e.category}</small>
                                 </div>
                             </div>
                         </div>
-                        {/************ MODAL STARTS HERE *********/}
-                        <div id={i} className="modal modal-sheet bg-dark px-4 py-md-5" tabIndex="-1" role="dialog">
-                                <div className="modal-dialog modal-xl bg-dark" role="document">
-                                    <div className="modal-content rounded-4 shadow bg-ligth" >
-                                        <div className="modal-header d-flex justify-content-center">
 
-                                        <h1 className="display-3 modal-title text-center text-black-50">{e.title}</h1>
-
-                                        </div>
-                                        <div className="modal-body py-3 text-center">
-                                            <img src={e.thumbImage} className='img-fluid'></img>
-                                        <h5 className="mt-3 fw-bold  text-black-50">{e.description}</h5>
-                                        <a href={e.extLink} target='_blank' className='btn btn-lg btn-outline-dark mt-5'>See Live</a>
-                                        </div>
-
-                                        <div className="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
-
-                                        <div className="modal-footer">
-                                            <button type="button" onClick={()=>closeModal(i)} className="btn btn-danger align-items-center" data-bs-dismiss="modal" aria-label="Close">
-                                            <i className='bi bi-x-circle px-2 fs-4'></i>Close
-                                            </button>
-                                        </div>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                        {/************ END MODAL ***********/}
                     </div>
                     )})}
                 </div>
@@ -200,4 +159,4 @@ function Portfolio() {
   )
 }
 
-export default Portfolio
+export default PortfolioLink

@@ -1,5 +1,5 @@
 import React from 'react'
-import Portfolio from '../Components/Portfolio';
+import PortfolioLink from '../Components/PortfolioLink';
 
 
 function PortfolioPage() {
@@ -10,7 +10,7 @@ function PortfolioPage() {
         <h1 className='display-2 text-white text-uppercase'>Portfolio</h1>
       </div>
     </div>
-    <Portfolio />
+    <PortfolioLink />
     </>
   )
 }

@@ -8,7 +8,8 @@ import { Provider } from 'react-redux'
 // Components CSS
 
 import '../src/Components/styles/cta-small-style.css'
-import '../src/Components/styles/portfolio-style.css'
+import '../src/Components/styles/portfolio-modal-style.css'
+import '../src/Components/styles/portfolio-link-style.css'
 import '../src/Components/styles/contact-style.css'
 import '../src/Components/styles/footer-style.css'
 import '../src/Components/styles/services-style.css'
