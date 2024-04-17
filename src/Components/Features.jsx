@@ -20,33 +20,33 @@ function Features() {
           <p className='text-center'>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           <div className="row pt-3 pb-5">
             <div className="col-lg-4 col-md-6 icon-box">
-              <div className="icon bg-primary"><i className="fab fa-react"></i></div>
-              <h4 className="title">React</h4>
-              <p className="description">Coded with React, smooth user experience and device compatibility</p>
+              <div className="icon bg-primary"><i className="bi bi-android2"></i></div>
+              <h4 className="title">Applications</h4>
+              <p className="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
             </div>
             <div className="col-lg-4 col-md-6 icon-box">
-              <div className="icon bg-primary"><i className="fa fa-cog"></i></div>
-              <h4 className="title">Components</h4>
+              <div className="icon bg-primary"><i className="bi bi-apple"></i></div>
+              <h4 className="title">Mobile</h4>
               <p className="description">Functional components, well organized and fully reusable</p>
             </div>
             <div className="col-lg-4 col-md-6 icon-box">
-              <div className="icon bg-primary"><i className="fab fa-css3"></i></div>
+              <div className="icon bg-primary"><i className="bi bi-bootstrap"></i></div>
               <h4 className="title">Bootstrap5</h4>
               <p className="description">Coded using Bootstrap5 framework, to speed up future developments</p>
             </div>
             <div className="col-lg-4 col-md-6 icon-box">
-              <div className="icon bg-primary"><i className="fa fa-palette"></i></div>
+              <div className="icon bg-primary"><i className="bi bi-palette"></i></div>
               <h4 className="title">Clean</h4>
               <p className="description">Clean and elegant design suitable for many projects and business</p>
             </div>
             <div className="col-lg-4 col-md-6 icon-box">
-              <div className="icon bg-primary"><i className="fab fa-android"></i></div>
+              <div className="icon bg-primary"><i className="bi bi-diagram-3-fill"></i></div>
               <h4 className="title">Responsive</h4>
               <p className="description">Responsive layout, perfectly showcase your projects in all devices</p>
             </div>
             <div className="col-lg-4 col-md-6 icon-box">
-              <div className="icon bg-primary"><i className="fab fa-js"></i></div>
-              <h4 className="title">JSON</h4>
+              <div className="icon bg-primary"><i className="bi bi-filetype-php"></i></div>
+              <h4 className="title">Database</h4>
               <p className="description">JSON or API friendly. Customize portfolio via JSON or APIs </p>
             </div>
           </div>

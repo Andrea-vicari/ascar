@@ -12,7 +12,7 @@ function Services() {
 
     return (
         <React.Fragment>
-            <section id="services" className={"padding-top-bottom" + " " + bgType + " " + textType}>
+            <section id="services" className={"py-3" + " " + bgType + " " + textType}>
 
                 <div className="container">
 
@@ -22,7 +22,7 @@ function Services() {
                     <div className="row services">
                         <div className="col-sm-3 item text-center">
                             <div className="icon bg-primary">
-                                <i className="fa fa-flag"></i>
+                                <i className="bi bi-flag"></i>
                             </div>
                             <h3>Branding</h3>
                             <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
@@ -30,7 +30,7 @@ function Services() {
                         <div className="col-sm-3 item text-center">
 
                             <div className="icon bg-primary">
-                                <i className="fa fa-pen"></i>
+                                <i className="bi bi-pen"></i>
                             </div>
                             <h3>Design</h3>
                             <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
@@ -38,13 +38,13 @@ function Services() {
                         </div>
                         <div className="col-sm-3 item text-center">
 
-                            <div className="icon bg-primary"><i className="fa fa-code"></i></div>
+                            <div className="icon bg-primary"><i className="bi bi-code"></i></div>
                             <h3>Development</h3>
                             <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
 
                         </div>
                         <div className="col-sm-3 item text-center">
-                            <div className="icon bg-primary"><i className="fa fa-rocket"></i></div>
+                            <div className="icon bg-primary"><i className="bi bi-rocket"></i></div>
                             <h3>Deployment</h3>
                             <p>Phasellus ac mi quam. Suspendisse eu erat venenatis, euismod tellus sollicitudin, egestas lacus.</p>
                         </div>
@@ -57,23 +57,23 @@ function Services() {
 
                         <ul className="process-list">
                             <li>
-                                <p className="icon mb-3"><i className="fa fa-search fa-fw"></i></p>
+                                <p className="icon mb-3"><i className="bi bi-search fa-fw"></i></p>
                                 <h4>Research &amp; Analysis</h4>
                             </li>
                             <li>
-                                <p className="icon mb-3"><i className="fa fa-pen fa-fw"></i></p>
+                                <p className="icon mb-3"><i className="bi bi-pen fa-fw"></i></p>
                                 <h4>Design</h4>
                             </li>
                             <li>
-                                <p className="icon mb-3"><i className="fa fa-code fa-fw"></i></p>
+                                <p className="icon mb-3"><i className="bi bi-code fa-fw"></i></p>
                                 <h4>Development</h4>
                             </li>
                             <li>
-                                <p className="icon mb-3"><i className="fa fa-cogs fa-fw"></i></p>
+                                <p className="icon mb-3"><i className="bi bi-check-circle fa-fw"></i></p>
                                 <h4>Testing</h4>
                             </li>
                             <li className="colored">
-                                <p className="icon mb-3 bg-primary"><i className="fa fa-globe fa-fw"></i></p>
+                                <p className="icon mb-3 bg-primary"><i className="bi bi-globe fa-fw"></i></p>
                                 <h4>Publish</h4>
                             </li>
                         </ul>

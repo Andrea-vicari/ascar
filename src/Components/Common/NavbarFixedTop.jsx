@@ -32,7 +32,7 @@ function NavbarFixedTop() {
                 <Link className="nav-link fs-4" to={'/services'}>Service</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link fs-4" href="#portfolio">Portfolio</a>
+                <Link className="nav-link fs-4" to={'/portfoliopage'}>Portfolio</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link fs-4" to={'/blogpage'}>Blog</Link>

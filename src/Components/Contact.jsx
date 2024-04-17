@@ -103,7 +103,7 @@ function Contact() {
 						<div className="controls">
 
 							<input id="contact-name" name="user_name" onChange={handleChange} placeholder="Your name" className="form-control requiredField label_better" type="text" data-error-empty="Please enter your name" />
-							<i className="fa fa-user text-primary"></i>
+							<i className="bi bi-people text-primary"></i>
 							{errors.username && <span className='mail_errors text-primary'>{errors.username}</span>}
 
 						</div>
@@ -114,7 +114,7 @@ function Contact() {
 						<label className="control-label" htmlFor="contact-mail">Email</label>
 						<div className=" controls">
 							<input id="contact-mail" name="user_email" onChange={handleChange} placeholder="Your email" className="form-control requiredField label_better" />
-							<i className="fa fa-envelope text-primary"></i>
+							<i className="bi bi-envelope text-primary"></i>
 							{errors.email && <span className='mail_errors text-primary'>{errors.email}</span>}
 						</div>
 					</div>
@@ -123,7 +123,7 @@ function Contact() {
 						<label className="control-label" htmlFor="contact-message">Message</label>
 						<div className="controls">
 							<textarea id="contact-message" name="message" onChange={handleChange} placeholder="Your message" className="form-control requiredField label_better" rows="6"></textarea>
-							<i className="fa fa-comment text-primary"></i>
+							<i className="bi bi-chat text-primary"></i>
 							{errors.message && <span className='mail_errors text-primary'>{errors.message}</span>}
 						</div>
 

@@ -1,104 +1,92 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux'
+import newsList from '../assets/news/news.json';
 
 function SinglePost() {
 
-	//let clicked = useLocation();
+  // Click State logics
+	var clicked = useLocation();
+  let titleArt  = clicked.state
+	console.log(titleArt.clicked)
+  var whatClicked = titleArt.clicked;
 
-  	//let singleArt  = clicked.state
+  // Dark Ligth Logics
+	const themeType = useSelector((state) => state.counter.value)
+  let bgType;
+  themeType == "ligth" ? bgType = "bg-ligth" : bgType = "bg-dark"
 
-	//console.log(singleArt.clicked)
+  // Filter the JSON by The title
+  var filterArticle = []
+
+  newsList.forEach(function callback(value, index) {
+    value.title == whatClicked ? filterArticle.push(value) : false
+  });
+
+  console.log(filterArticle)
 
 	return (
 	<>
-		<header id="home" className="bg-primary py-5">
+    <div className='container-fluid pt-5 mt-5 bg-stripe'>
+      <div className='container text-center mt-5 pb-5'>
+        <h1 className='display-2 text-white text-uppercase'>{titleArt.clicked}</h1>
+      </div>
+    </div>
+    <article className="post single-post">
+      <div className="container">
 
-			<div className="container">
+          <div className="row">
 
-				<h1 className="page-title"></h1>
+              <div className="col-sm-10 mx-auto col-sm-offset-1">
 
-				<p className="page-subtitle">Travelling the world on a train. A photo trip...</p>
+                <div className="carousel slide py-3">
+                  <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <img src="https://placehold.co/800x400" className="d-block w-100"/>
+                  </div>
+                  <div className="carousel-item">
+                    <img src="https://placehold.co/800x400" className="d-block w-100"/>
+                  </div>
+                  <div className="carousel-item">
+                    <img src="https://placehold.co/800x400" className="d-block w-100"/>
+                  </div>
+                  </div>
+                  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Previous</span>
+                  </button>
+                  <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Next</span>
+                  </button>
+                </div>
 
-			</div>
+                  <div className="post-content">
 
-		</header>
-		<article className="post single-post">
-		<div className="container">
-			<div className="row">
-				<div className="col-sm-10 mx-auto">
-				    <div className="post-media">
-								{/* METTI QUI L IMMAGINE */}
+                      <h2 className="text-center">{filterArticle[0].title}</h2>
 
-					</div>
-					<div className="post-content">
+                      <p>{filterArticle[0].description}</p>
 
-								<h2 className="text-center">Chapter 1</h2>
+                  </div>
 
-								<p>No one rejects, dislikes, or <a href="#link">avoids pleasure itself</a>, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+                  <footer className="post-footer">
 
-								<p>But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+                      <div className="post-meta clearfix">
 
-								<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.</p>
+                          <p className="post-date">March 25, 2014</p>
 
-								<div className="row">
-									<div className="col-sm-6 col-sm-offset-6">
-										<blockquote className="blockquote-reverse">
-											<p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?</p>
-										</blockquote>
-									</div>
-								</div>
 
-								<h2 className="text-center">Chapter 2</h2>
 
-								<p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
+                      </div>
+                  </footer>
 
-								<p>But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.</p>
+              </div>
 
-								<p>The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</p>
+          </div>
 
-								<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+      </div>
+    </article>
 
-					</div>
-					<footer className="post-footer">
-
-								<div className="post-meta clearfix">
-
-									<p className="post-date">March 25, 2014</p>
-
-									<p className="post-share">
-										Share:
-
-										<span className="social-media">
-											<span className="facebook"></span>
-											<span className="twitter"></span>
-											<span className="plusone"></span>
-											<span className="pinterest"></span>
-										</span>
-									</p>
-
-								</div>
-
-								<nav className="posts-nav clearfix">
-									<ul>
-										<li className="prev-post">
-											<a href="anatomy.html">Previous Post</a>
-											<p>Anatomy of a Photograph</p>
-										</li>
-										<li className="next-post">
-											<a href="travelling-music-video.html">Next Post</a>
-											<p>Travelling - Music Video</p>
-										</li>
-									</ul>
-
-									<a className="all-posts" href="blog.html" data-toggle="tooltip" title="Back to Blog"><i className="fa fa-th-list"></i></a>
-
-								</nav>
-
-					</footer>
-				</div>
-			</div>
-		</div>
-	</article>
 	</>
 	)
 }

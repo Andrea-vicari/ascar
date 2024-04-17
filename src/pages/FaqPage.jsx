@@ -27,7 +27,7 @@ function FaqPage() {
       <div className="faq-list">
         <ul>
           <li>
-            <i className="fa fa-question-circle text-primary icon-help"></i> <a data-bs-toggle="collapse" className="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i className="fa fa-chevron-down icon-show"></i><i className="fa fa-chevron-up icon-close"></i></a>
+            <i className="bi bi-question-circle text-primary icon-help"></i> <a data-bs-toggle="collapse" className="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i className="bi bi-chevron-down icon-show"></i><i className="bi bi-chevron-up icon-close"></i></a>
             <div id="faq-list-1" className="collapse show" data-bs-parent=".faq-list">
               <p className={textColor}>
                 Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
@@ -36,7 +36,7 @@ function FaqPage() {
           </li>
 
           <li>
-            <i className="fa fa-question-circle text-primary icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" className="collapsed">Feugiat scelerisque varius morbi enim nunc? <i className="fa fa-chevron-down icon-show"></i><i className="fa fa-chevron-up icon-close"></i></a>
+            <i className="bi bi-question-circle text-primary icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" className="collapsed">Feugiat scelerisque varius morbi enim nunc? <i className="bi bi-chevron-down icon-show"></i><i className="bi bi-chevron-up icon-close"></i></a>
             <div id="faq-list-2" className="collapse" data-bs-parent=".faq-list">
               <p>
                 Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
@@ -45,7 +45,7 @@ function FaqPage() {
           </li>
 
           <li>
-            <i className="fa fa-question-circle text-primary icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" className="collapsed">Dolor sit amet consectetur adipiscing elit? <i className="fa fa-chevron-down icon-show"></i><i className="fa fa-chevron-up icon-close"></i></a>
+            <i className="bi bi-question-circle text-primary icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" className="collapsed">Dolor sit amet consectetur adipiscing elit? <i className="bi bi-chevron-down icon-show"></i><i className="bi bi-chevron-up icon-close"></i></a>
             <div id="faq-list-3" className="collapse" data-bs-parent=".faq-list">
               <p>
                 Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
@@ -54,7 +54,7 @@ function FaqPage() {
           </li>
 
           <li>
-            <i className="fa fa-question-circle text-primary icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" className="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i className="fa fa-chevron-down icon-show"></i><i className="fa fa-chevron-up icon-close"></i></a>
+            <i className="bi bi-question-circle text-primary icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" className="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i className="bi bi-chevron-down icon-show"></i><i className="bi bi-chevron-up icon-close"></i></a>
             <div id="faq-list-4" className="collapse" data-bs-parent=".faq-list">
               <p>
                 Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
@@ -63,7 +63,7 @@ function FaqPage() {
           </li>
 
           <li>
-            <i className="fa fa-question-circle text-primary icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" className="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i className="fa fa-chevron-down icon-show"></i><i className="fa fa-chevron-up icon-close"></i></a>
+            <i className="bi bi-question-circle text-primary icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" className="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i className="bi bi-chevron-down icon-show"></i><i className="bi bi-chevron-up icon-close"></i></a>
             <div id="faq-list-5" className="collapse" data-bs-parent=".faq-list">
               <p>
                 Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.

@@ -32,7 +32,7 @@ function Footer() {
             <li className="nav-item"><Link to="/privacy" className="nav-link px-2 text-white">Privacy</Link></li>
           </ul>
           <button id="myBtn" onClick={topFunction} className='btn btn-sm btn-outline-secondary'>
-            <i className='fa fa-arrow-up'></i>
+            <i className="bi bi-arrow-bar-up"></i>
           </button>
         </footer>
       </div>

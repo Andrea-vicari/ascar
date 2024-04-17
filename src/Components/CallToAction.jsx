@@ -27,7 +27,7 @@ function CallToAction() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in varius erat.</p>
                     <p>Nam id felis eu felis consequat adipiscing. Suspendisse sit amet faucibus nunc, dignissim vehicula enim. Vestibulum luctus turpis sit amet varius venenatis.</p>
 
-                    <a className={"btn" + " " + buttonType} href="#services"><i className="fa fa-arrow-down"></i> Check our service</a>
+                    <a className={"btn" + " " + buttonType} href="#services"><i className="bi bi-arrow-down"></i> Check our service</a>
 
                 </div>
 

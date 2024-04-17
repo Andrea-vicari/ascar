@@ -53,7 +53,7 @@ function Blog() {
                                 <p className="card-text mb-auto">{e.fixedLengthExcerpt}</p>
                                 <a href="#" className="icon-link gap-1 icon-link-hover stretched-link">
                                     Continue reading
-                                    <i className='fa fa-arrow-right'></i>
+                                    <i className='bi bi-arrow-right'></i>
                                 </a>
                                 </div>
                                 <div className="col-auto d-none d-lg-block">

@@ -16,7 +16,7 @@ function CallToActionSmall() {
                     <div className="col-md-3 mt-3">
                         <p className="text-center">
                             <Link className="btn btn-outline-dark btn-lg p-3" to="/contact">
-                                <i className="fs-3 fa fa-envelope"></i> Contact
+                                <i className="fs-3 bi bi-envelope"></i> Contact
                             </Link>
                         </p>
                     </div>

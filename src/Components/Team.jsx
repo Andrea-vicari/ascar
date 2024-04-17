@@ -35,9 +35,9 @@ function Team() {
                         <span>Chief Executive Officer</span>
                         <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                         <div className="social">
-                            <a href=""><i className="fab fa-instagram"></i></a>
-                            <a href=""><i className="fab fa-facebook"></i></a>
-                            <a href=""> <i className="fa fa-envelope"></i> </a>
+                            <a href=""><i className="bi bi-instagram"></i></a>
+                            <a href=""><i className="bi bi-facebook"></i></a>
+                            <a href=""> <i className="bi bi-envelope"></i> </a>
                         </div>
                         </div>
                     </div>
@@ -53,9 +53,9 @@ function Team() {
                         <span>H.R. Manager</span>
                         <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                         <div className="social">
-                            <a href=""><i className="fab fa-instagram"></i></a>
-                            <a href=""><i className="fab fa-facebook"></i></a>
-                            <a href=""> <i className="fa fa-envelope"></i> </a>
+                            <a href=""><i className="bi bi-instagram"></i></a>
+                            <a href=""><i className="bi bi-facebook"></i></a>
+                            <a href=""> <i className="bi bi-envelope"></i> </a>
                         </div>
                         </div>
                     </div>
@@ -71,9 +71,9 @@ function Team() {
                         <span>Product Manager</span>
                         <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                         <div className="social">
-                            <a href=""><i className="fab fa-instagram"></i></a>
-                            <a href=""><i className="fab fa-facebook"></i></a>
-                            <a href=""> <i className="fa fa-envelope"></i> </a>
+                            <a href=""><i className="bi bi-instagram"></i></a>
+                            <a href=""><i className="bi bi-facebook"></i></a>
+                            <a href=""> <i className="bi bi-envelope"></i> </a>
                         </div>
                         </div>
                     </div>
@@ -89,9 +89,9 @@ function Team() {
                         <span>Finance Manager</span>
                         <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                         <div className="social">
-                            <a href=""><i className="fab fa-instagram"></i></a>
-                            <a href=""><i className="fab fa-facebook"></i></a>
-                            <a href=""> <i className="fa fa-envelope"></i> </a>
+                            <a href=""><i className="bi bi-instagram"></i></a>
+                            <a href=""><i className="bi bi-facebook"></i></a>
+                            <a href=""> <i className="bi bi-envelope"></i> </a>
                         </div>
                         </div>
                     </div>

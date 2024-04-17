@@ -9,8 +9,11 @@ import AboutUsPage from './pages/AboutUsPage';
 import ServicePage from './pages/Servicepage';
 import ContactPage from './pages/ContactPage';
 import BlogPage from './pages/BlogPage';
+import PortfolioPage from './pages/Portfoliopage';
 import PrivacyPage from './pages/PrivacyPage';
 import FaqPage from './pages/FaqPage';
+import SinglePost from './pages/SinglePost';
+import SingleProject from './pages/SingleProject';
 
 function App() {
 
@@ -26,6 +29,9 @@ function App() {
             <Route path="/blogpage" element={<BlogPage />} />
             <Route path="/faqpage" element={<FaqPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/portfoliopage" element={<PortfolioPage />} />
+            <Route path="/singlepost" element={<SinglePost />} />
+            <Route path="/singleproject" element={<SingleProject />} />
         </Routes>
         </ScrollToTop>
       <Footer />

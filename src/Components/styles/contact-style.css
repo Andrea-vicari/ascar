@@ -112,7 +112,7 @@
     position:relative;
 }
 
-#contact-form .form-group [class*=fa] {
+#contact-form .form-group [class*=bi] {
     display:block;
     width:64px;
     position:absolute;
@@ -127,11 +127,11 @@
 	transition:color .3s ease-out;
 }
 
-#contact-form .form-group [class*=fa].active{
+#contact-form .form-group [class*=bi].active{
     color:#ccc;
 }
 
-#contact-form.no-placeholder .form-group [class*=fa]{
+#contact-form.no-placeholder .form-group [class*=bi]{
     top:30px;
 }
 

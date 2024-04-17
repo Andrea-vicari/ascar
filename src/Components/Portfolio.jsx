@@ -155,7 +155,7 @@ function Portfolio() {
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div className="btn-group">
                                         <button className="btn btn-outline-primary p-1" onClick={()=>openModal(i)}>
-                                            <i className="fs-6 fa fa-search"></i> See Project
+                                            <i className="fs-6 bi bi-search"></i> See Project
                                         </button>
                                     </div>
                                     <small className="text-primary fs-6">{e.category}</small>
@@ -181,7 +181,7 @@ function Portfolio() {
 
                                         <div className="modal-footer">
                                             <button type="button" onClick={()=>closeModal(i)} className="btn btn-danger align-items-center" data-bs-dismiss="modal" aria-label="Close">
-                                            <i className='fa fa-times px-2 fs-4'></i>Close
+                                            <i className='bi bi-x-circle px-2 fs-4'></i>Close
                                             </button>
                                         </div>
                                         </div>

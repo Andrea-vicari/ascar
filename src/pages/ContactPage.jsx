@@ -30,17 +30,17 @@ function ContactPage() {
           </div>
           <div className="col-md-4 d-flex flex-column pt-4 justify-content-center">
             <div className="col-sm-4 text-center contact-item mx-auto">
-              <a className="icon" href="http://goo.gl/maps/0m7WQ" target="_blank"><i className="fa fa-map-marker fa-fw text-primary"></i></a>
+              <a className="icon" href="http://goo.gl/maps/0m7WQ" target="_blank"><i className="bi bi-geo-fill fa-fw text-primary"></i></a>
               <h2>Our Location</h2>
               <p>123 Your City, ST, 12345</p>
             </div>
             <div className="col-sm-4 text-center contact-item mx-auto">
-              <a className="icon" href="mailto:mail@example.com"><i className="fa fa-envelope text-primary"></i></a>
+              <a className="icon" href="mailto:mail@example.com"><i className="bi bi-envelope text-primary"></i></a>
               <h2>Send a mail</h2>
               <p>mail@example.com</p>
             </div>
             <div className="col-sm-4 text-center contact-item mx-auto mb-4">
-              <a className="icon" href="telto:01 234-56789"><i className="fa fa-phone fa-fw text-primary"></i></a>
+              <a className="icon" href="telto:01 234-56789"><i className="bi bi-phone fa-fw text-primary"></i></a>
               <h2>Call us</h2>
               <p>+01 234-56789</p>
             </div>

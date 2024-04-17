@@ -18,7 +18,8 @@ import '../src/Components/styles/team-style.css'
 import '../src/Components/styles/banner-intro-style.css'
 import '../src/Components/styles/divider-style.css'
 import '../src/Components/styles/faq-style.css'
-
+import '../src/Components/styles/single-post-style.css'
+import '../src/Components/styles/single-project-style.css'
 // Main CSS Sass
 import './sass/index.scss';
 
