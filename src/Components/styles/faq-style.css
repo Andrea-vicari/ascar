@@ -24,7 +24,6 @@
   .faq .faq-list a {
     display: block;
     position: relative;
-    font-family: "Poppins", sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
@@ -34,11 +33,10 @@
   }
 
   .faq .faq-list .icon-help {
-    font-size: 24px;
+    font-size: 1.2rem;
     position: absolute;
     right: 0;
     left: 20px;
-    color: #47b2e4;
   }
 
   .faq .faq-list .icon-show,
@@ -63,9 +61,6 @@
     transition: 0.3s;
   }
 
-  .faq .faq-list a.collapsed:hover {
-    color: #47b2e4;
-  }
 
   .faq .faq-list a.collapsed .icon-show {
     display: inline-block;

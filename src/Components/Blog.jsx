@@ -31,6 +31,13 @@ function Blog() {
                 newsList[i].fixedLengthExcerpt = fixedLengthExcerpt
             }
 
+            // Declare a support array
+            var postShorted = []
+
+            for (let i=0;i<4;i++){
+                postShorted.push(newsList[i]);
+            }
+
   return (
     <>
     <section id="news" className={"pt-5 pb-3" + " " + bgType + " " + textType}>
@@ -42,7 +49,7 @@ function Blog() {
 
 
                     <div className="row pb-5">
-                    {newsList.map((e)=>{
+                    {postShorted.map((e)=>{
                     return(
                         <div className="col-md-6" key={e.title}>
                             <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">

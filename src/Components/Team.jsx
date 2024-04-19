@@ -31,7 +31,7 @@ function Team() {
                             <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
                         </div>
                         <div className="member-info">
-                        <h4>John Doe</h4>
+                        <h4 className='text-primary'>John Doe</h4>
                         <span>Chief Executive Officer</span>
                         <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                         <div className="social">
@@ -49,7 +49,7 @@ function Team() {
                             <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
                         </div>
                         <div className="member-info">
-                        <h4>Jeff White</h4>
+                        <h4 className='text-primary'>Jeff White</h4>
                         <span>H.R. Manager</span>
                         <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                         <div className="social">
@@ -67,7 +67,7 @@ function Team() {
                             <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
                         </div>
                         <div className="member-info">
-                        <h4>Tom Reed</h4>
+                        <h4 className='text-primary'>Tom Reed</h4>
                         <span>Product Manager</span>
                         <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                         <div className="social">
@@ -85,7 +85,7 @@ function Team() {
                             <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
                         </div>
                         <div className="member-info">
-                        <h4>Shawn Stephen</h4>
+                        <h4 className='text-primary'>Shawn Stephen</h4>
                         <span>Finance Manager</span>
                         <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                         <div className="social">

@@ -4,7 +4,7 @@ import { useSelector} from 'react-redux'
 import portfolio from '../assets/works/portfolio.json';
 
 
-function PortfolioModal() {
+function ProjectsModal() {
     // Dark light logics
     const themeType = useSelector((state) => state.counter.value)
     let bgType, textType;
@@ -127,7 +127,7 @@ function PortfolioModal() {
     return (
     <>
     <section id="portfolio" className={"pb-5 " + bgType + " " + textType}>
-    <h1 className="section-title pt-5">PortfolioModal</h1>
+    <h1 className="section-title pt-5">Projects-Modal</h1>
         <p className='mb-3 text-center'>Really are proud of what i do. This is just an example of my latest projects.</p>
 
         <div>
@@ -200,4 +200,4 @@ function PortfolioModal() {
   )
 }
 
-export default PortfolioModal
+export default ProjectsModal

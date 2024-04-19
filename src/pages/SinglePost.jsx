@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux'
 import newsList from '../assets/news/news.json';
 
+
 function SinglePost() {
 
   // Click State logics
@@ -13,8 +14,9 @@ function SinglePost() {
 
   // Dark Ligth Logics
 	const themeType = useSelector((state) => state.counter.value)
-  let bgType;
-  themeType == "ligth" ? bgType = "bg-ligth" : bgType = "bg-dark"
+  let bgType, textType;
+  themeType == "ligth" ? bgType = "" : bgType = "bg-dark"
+  themeType == "ligth" ? textType = "" : textType = "text-white"
 
   // Filter the JSON by The title
   var filterArticle = []
@@ -32,51 +34,46 @@ function SinglePost() {
         <h1 className='display-2 text-white text-uppercase'>{titleArt.clicked}</h1>
       </div>
     </div>
-    <article className="post single-post">
-      <div className="container">
+    <article className={"post single-post"  + " " + bgType + " " + textType}>
+      <div className={"container"  + " " + bgType + " " + textType}>
 
           <div className="row">
 
               <div className="col-sm-10 mx-auto col-sm-offset-1">
-
-                <div className="carousel slide py-3">
-                  <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <img src="https://placehold.co/800x400" className="d-block w-100"/>
-                  </div>
-                  <div className="carousel-item">
-                    <img src="https://placehold.co/800x400" className="d-block w-100"/>
-                  </div>
-                  <div className="carousel-item">
-                    <img src="https://placehold.co/800x400" className="d-block w-100"/>
-                  </div>
-                  </div>
-                  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span className="visually-hidden">Previous</span>
-                  </button>
-                  <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span className="visually-hidden">Next</span>
-                  </button>
+                <div className='text-center py-3'>
+                  <img src={filterArticle[0].bannerImg} className='img-fluid'/>
                 </div>
 
                   <div className="post-content">
 
-                      <h2 className="text-center">{filterArticle[0].title}</h2>
+                      <h2 className="text-center fs-1">{filterArticle[0].title}</h2>
 
                       <p>{filterArticle[0].description}</p>
 
                   </div>
 
-                  <footer className="post-footer">
+                  <footer className="post-footer border-top py-3">
+                      <div className='d-flex justify-content-between'>
+                        <div>
+                          <i className="bi bi-clock mx-2"></i>
+                            {filterArticle[0].date}
+                        </div>
+                        <div>
+                        <ul className="nav align-items-center justify-content-lg-end list-unstyled d-flex">
+                          <li className="ms-3"><a className="text-primary" href="#">
 
-                      <div className="post-meta clearfix">
-
-                          <p className="post-date">March 25, 2014</p>
-
-
-
+                            <i className='bi bi-facebook fs-4'></i>
+                            </a>
+                          </li>
+                          <li className="ms-3"><a className="text-primary" href="#">
+                              <i className='bi bi-linkedin fs-4'></i>
+                            </a>
+                          </li><li className="ms-3"><a className="text-primary" href="#">
+                          <i className='bi bi-instagram fs-4'></i>
+                            </a>
+                          </li>
+                        </ul>
+                        </div>
                       </div>
                   </footer>
 

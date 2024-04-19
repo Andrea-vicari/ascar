@@ -3,11 +3,23 @@ import DarkSelector from '../Common/SwitchDark'
 import SocialMenu from '../Common/SocialMenu';
 import { useSelector, useDispatch } from 'react-redux'
 import { Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 
 function NavbarFixedTop() {
-      // Dark theme logics
+  // Dark theme logics
   const count = useSelector((state) => state.counter.value)
+
+  //assigning location variable
+  const location = useLocation();
+
+  //destructuring pathname from location
+  const { pathname } = location;
+
+   //Javascript split method to get the name of the path in array
+   // Ex. splitLocation: ['', 'aboutus']
+   const splitLocation = pathname.split("/");
+
   return (
     <>
         <div className='container'>
@@ -26,19 +38,19 @@ function NavbarFixedTop() {
                 <Link className="nav-link fs-4" aria-current="page" to={'/'}>Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fs-4" to={'/aboutus'}>About us</Link>
+                <Link className={splitLocation[1] == "aboutus" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/aboutus'} >About us</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fs-4" to={'/services'}>Service</Link>
+                <Link className={splitLocation[1] == "services" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/services'}>Service</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fs-4" to={'/portfoliopage'}>Portfolio</Link>
+                <Link className={splitLocation[1] == "projectspage" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/projectspage'}>Projects</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fs-4" to={'/blogpage'}>Blog</Link>
+                <Link className={splitLocation[1] == "blogpage" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/blogpage'}>Blog</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fs-4" to={'/contact'}>Contact</Link>
+                <Link className={splitLocation[1] == "contact" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/contact'}>Contact</Link>
               </li>
 
             </ul>

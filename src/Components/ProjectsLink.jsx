@@ -5,7 +5,7 @@ import portfolio from '../assets/works/portfolio.json';
 import { Link } from 'react-router-dom';
 
 
-function PortfolioLink() {
+function ProjectsLink() {
     // Dark light logics
     const themeType = useSelector((state) => state.counter.value)
     let bgType, textType;
@@ -112,7 +112,7 @@ function PortfolioLink() {
     return (
     <>
     <section id="portfolio" className={"pb-5 " + bgType + " " + textType}>
-    <h1 className="section-title pt-5">PortfolioLink</h1>
+    <h1 className="section-title pt-5">Projects-Link</h1>
         <p className='mb-3 text-center'>Really are proud of what i do. This is just an example of my latest projects.</p>
 
         <div>
@@ -139,7 +139,7 @@ function PortfolioLink() {
                                 <p className="card-text">{e.fixedLengthExcerpt}</p>
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div className="btn-group">
-                                        <Link className="btn btn-outline-primary p-1">
+                                        <Link className="btn btn-outline-primary p-1" to={`/singleproject?${e.title}`} state={{ clicked: e.title }}>
                                             <i className="fs-6 bi bi-search"></i> See Project
                                         </Link>
                                     </div>
@@ -159,4 +159,4 @@ function PortfolioLink() {
   )
 }
 
-export default PortfolioLink
+export default ProjectsLink
