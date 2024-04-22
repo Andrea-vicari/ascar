@@ -1,19 +1,30 @@
 import React from 'react'
-import { useEffect } from 'react'
+import {useState} from 'react';
 import { Link } from "react-router-dom";
 
 function Footer() {
 
-  // Scroll to top function
-  useEffect(() => {
-    const element = document.getElementById('myBtn');
-    element.style.display = "block";
-  }, []);
+  const [visible, setVisible] = useState(false)
 
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300){
+      setVisible(true)
+    }
+    else if (scrolled <= 300){
+      setVisible(false)
+    }
+  };
+
+  const scrollToTop = () =>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  window.addEventListener('scroll', toggleVisible);
+
 
   return (
     <div className='container-fluid bg-primary py-4'>
@@ -31,7 +42,7 @@ function Footer() {
             <li className="nav-item"><Link to="/faqpage" className="nav-link px-2 text-white">FAQs</Link></li>
             <li className="nav-item"><Link to="/privacy" className="nav-link px-2 text-white">Privacy</Link></li>
           </ul>
-          <button id="myBtn" onClick={topFunction} className='btn btn-sm btn-outline-secondary'>
+          <button id="myBtn" onClick={scrollToTop} style={{display: visible ? 'inline' : 'none'}} className='btn btn-sm btn-outline-secondary'>
             <i className="bi bi-arrow-bar-up"></i>
           </button>
         </footer>
