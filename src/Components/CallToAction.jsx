@@ -1,6 +1,7 @@
 import React from 'react'
 import CtaImg from "../assets/images/web-design-3411373_1280.jpg"
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 function CallToAction() {
 
@@ -27,7 +28,7 @@ function CallToAction() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in varius erat.</p>
                     <p>Nam id felis eu felis consequat adipiscing. Suspendisse sit amet faucibus nunc, dignissim vehicula enim. Vestibulum luctus turpis sit amet varius venenatis.</p>
 
-                    <a className={"btn" + " " + buttonType} href="#services"><i className="bi bi-arrow-down"></i> Check our service</a>
+                    <Link className={"btn" + " " + buttonType} to="/contact"><i className="bi bi-arrow-down"></i> Contact us</Link>
 
                 </div>
 
